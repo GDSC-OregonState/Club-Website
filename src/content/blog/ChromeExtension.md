@@ -35,6 +35,10 @@ my-extension/
 │── icons/ (optional)
 ```
 
+### Chrome extension architecture
+![Chrome Extension Development](../../../public/extension.png)
+
+
 * * * * *
 
 Setting Up Your First Chrome Extension
@@ -104,15 +108,15 @@ document.getElementById("clickMe").addEventListener("click", () => {
 Challenges: Test Your Knowledge!
 --------------------------------
 
-### **Easy Challenges (10 Points Each)**
+### **Easy Challenge (10 Points Each)**
 
-1.  **Modify Page Colors** -- Change the background color of a website to **light blue**.
+1.  **Modify Page Color** -- Change the background color of a website to **light blue**.
 
 2.  **Popup Message** -- Add a button to the popup that displays an alert when clicked.
 
 3.  **Change Tab Title** -- Modify the title of the current webpage to **"Hello, World!"**.
 
-### **Medium Challenges (20 Points Each)**
+### **Medium Challenges (30 Points Each)**
 
 1.  **Save and Restore User Input** -- Create a popup with a text input field that saves what the user types and restores it when reopened.
 
@@ -120,7 +124,7 @@ Challenges: Test Your Knowledge!
 
 3.  **Dynamic Background Changer** -- Let users pick a background color from the popup and apply it to all webpages.
 
-### **Hard Challenges (30+ Points Each)**
+### **Hard Challenges (40 Points Each)**
 
 1.  **Block a Specific Website** -- Prevent access to a specific website (e.g., YouTube) by redirecting to another page.
 
@@ -164,6 +168,8 @@ Building a Chrome extension is an exciting way to enhance your web development s
 
 -   [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions)
 
--   [GitHub Extension Examples](https://github.com/GoogleChrome/chrome-extensions-samples)
+-   [Chrome Extension Examples](https://developer.chrome.com/docs/extensions/samples)
+
+- [https://developer.chrome.com/docs/extensions/develop](https://developer.chrome.com/docs/extensions/develop)
 
 Happy coding! 🚀
