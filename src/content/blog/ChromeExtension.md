@@ -1,3 +1,14 @@
+---
+title: "Week 8: Chrome Extension Challenge"
+description: "Learn how to build Chrome Extensions!!!"
+coverImage: "/extension.png"
+category: "Web Development"
+inDev: false
+pubDate: "2025-02-23"
+updatedDate: "2025-02-23"
+publishDate: Feb 23th
+---
+
 Building a Chrome Extension: A Hands-On Guide for CS Majors
 ===========================================================
 
