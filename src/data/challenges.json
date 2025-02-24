@@ -196,6 +196,63 @@
           "description": "Create a working convolutional machine learning model that can evaluate images from the CIFAR10 image dataset"
         }
       ]
+    },
+    {
+      "weekNumber": 7,
+      "topic": "Chrome extensions",
+      "slug": "chromeextensions",
+      "challenges": [
+        {
+          "name": "Modify Page Color",
+          "points": 10,
+          "description": "Change the background color of a website to light blue."
+        },
+        {
+          "name": "Popup Message",
+          "points": 10,
+          "description": "Add a button to the popup that displays an alert when clicked."
+        },
+        {
+          "name": "Change Tab Title",
+          "points": 10,
+          "description": "Modify the title of the current webpage to 'Hello, World!'."
+        },
+        {
+          "name": "Save and Restore User Input",
+          "points": 30,
+          "description": "Create a popup with a text input field that saves what the user types and restores it when reopened."
+        },
+        {
+          "name": "Replace Words on a Webpage",
+          "points": 30,
+          "description": "Replace all instances of 'the' with '🚀' on any website."
+        },
+        {
+          "name": "Dynamic Background Changer",
+          "points": 30,
+          "description": "Let users pick a background color from the popup and apply it to all webpages."
+        },
+        {
+          "name": "Block a Specific Website",
+          "points": 40,
+          "description": "Prevent access to a specific website (e.g., YouTube) by redirecting to another page."
+        },
+        {
+          "name": "Track Browsing Time",
+          "points": 40,
+          "description": "Count the total time a user spends on a specific website and display it in the popup."
+        },
+        {
+          "name": "Context Menu Actions",
+          "points": 40,
+          "description": "Add a right-click menu option that lets users highlight text and copy it to the clipboard automatically."
+        },
+        {
+          "name": "Web Scraper & Notification",
+          "points": 40,
+          "description": "Scrape the price of a product from a shopping website and display it to the user in the popup or send an alert message."
+        }
+      ]
     }
   ]
 }
