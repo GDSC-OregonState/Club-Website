@@ -199,8 +199,8 @@
     },
     {
       "weekNumber": 7,
-      "topic": "Chrome extensions",
-      "slug": "chromeextensions",
+      "topic": "Chrome Extension",
+      "slug": "chromeextension",
       "challenges": [
         {
           "name": "Modify Page Color",
