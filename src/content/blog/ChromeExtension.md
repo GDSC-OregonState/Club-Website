@@ -9,30 +9,27 @@ updatedDate: "2025-02-23"
 publishDate: Feb 23th
 ---
 
-Building a Chrome Extension: A Hands-On Guide for CS Majors
-===========================================================
+# Building a Chrome Extension: A Hands-On Guide for CS Majors
 
-Introduction
-------------
+## Introduction
 
-Chrome extensions are powerful tools that enh ance browser functionality, automate tasks, and improve productivity. Whether you're a beginner or an experienced developer, building a Chrome extension is a great way to apply web development skills in a practical setting. This guide will walk you through the fundamentals of Chrome extension development and include hands-on challenges to test your skills!
+Chrome extensions are powerful tools that enhance browser functionality, automate tasks, and improve productivity. Whether you're a beginner or an experienced developer, building a Chrome extension is a great way to apply web development skills in a practical setting. This guide will walk you through the fundamentals of Chrome extension development and include hands-on challenges to test your skills!
 
-* * * * *
+---
 
-Understanding Chrome Extension Architecture
--------------------------------------------
+## Understanding Chrome Extension Architecture
 
 A Chrome extension consists of several key components:
 
--   **Manifest File (**`**manifest.json**`**)** -- Defines metadata and permissions.
+- **Manifest File (**`manifest.json`**)** -- Defines metadata and permissions.
 
--   **Background Scripts** -- Runs in the background and listens for browser events.
+- **Background Scripts** -- Runs in the background and listens for browser events.
 
--   **Content Scripts** -- Injects JavaScript into web pages.
+- **Content Scripts** -- Injects JavaScript into web pages.
 
--   **Popup UI** -- Provides an interface for users to interact with the extension.
+- **Popup UI** -- Provides an interface for users to interact with the extension.
 
--   **Permissions** -- Controls access to browser features and web requests.
+- **Permissions** -- Controls access to browser features and web requests.
 
 ### Basic Folder Structure
 
@@ -47,13 +44,12 @@ my-extension/
 ```
 
 ### Chrome extension architecture
+
 ![Chrome Extension Development](../../../public/extension.png)
 
+---
 
-* * * * *
-
-Setting Up Your First Chrome Extension
---------------------------------------
+## Setting Up Your First Chrome Extension
 
 ### 1\. Creating the Manifest File
 
@@ -73,7 +69,7 @@ Every Chrome extension needs a `manifest.json` file to define its structure and 
 
 ### 2\. Writing Background and Content Scripts
 
-**Background Script Example (**`**background.js**`**)**
+**Background Script Example (**`background.js`**)**
 
 ```
 chrome.runtime.onInstalled.addListener(() => {
@@ -81,7 +77,7 @@ chrome.runtime.onInstalled.addListener(() => {
 });
 ```
 
-**Content Script Example (**`**content.js**`**)**
+**Content Script Example (**`content.js`**)**
 
 ```
 document.body.style.backgroundColor = "lightblue";
@@ -89,14 +85,14 @@ document.body.style.backgroundColor = "lightblue";
 
 ### 3\. Creating a Popup UI
 
-**Popup HTML (**`**popup.html**`**)**
+**Popup HTML (**`popup.html`**)**
 
 ```
 <button id="clickMe">Click Me</button>
 <script src="popup.js"></script>
 ```
 
-**Popup JavaScript (**`**popup.js**`**)**
+**Popup JavaScript (**`popup.js`**)**
 
 ```
 document.getElementById("clickMe").addEventListener("click", () => {
@@ -114,10 +110,9 @@ document.getElementById("clickMe").addEventListener("click", () => {
 
 4.  Test it out!
 
-* * * * *
+---
 
-Challenges: Test Your Knowledge!
---------------------------------
+## Challenges: Test Your Knowledge!
 
 ### **Easy Challenge (10 Points Each)**
 
@@ -145,18 +140,17 @@ Challenges: Test Your Knowledge!
 
 4.  **Web Scraper & Notification** -- Scrape the price of a product from a shopping website and display it to the user in the popup or send an alert message.
 
-* * * * *
+---
 
-Debugging and Publishing Your Extension
----------------------------------------
+## Debugging and Publishing Your Extension
 
 ### Debugging Tips
 
--   Use `console.log()` to debug scripts.
+- Use `console.log()` to debug scripts.
 
--   Open Chrome DevTools (`F12` or `Ctrl+Shift+I`) to inspect errors.
+- Open Chrome DevTools (`F12` or `Ctrl+Shift+I`) to inspect errors.
 
--   Check `chrome://extensions/` for extension-related issues.
+- Check `chrome://extensions/` for extension-related issues.
 
 ### Publishing Your Extension
 
@@ -166,20 +160,19 @@ Debugging and Publishing Your Extension
 
 3.  Submit it for review with a description and screenshots.
 
-* * * * *
+---
 
-Conclusion
-----------
+## Conclusion
 
 Building a Chrome extension is an exciting way to enhance your web development skills. Start with the basics, experiment with different functionalities, and challenge yourself with the hands-on exercises. Have fun coding!
 
 **Resources:**
 
--   Chrome Extensions Docs
+- Chrome Extensions Docs
 
--   [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions)
+- [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions)
 
--   [Chrome Extension Examples](https://developer.chrome.com/docs/extensions/samples)
+- [Chrome Extension Examples](https://developer.chrome.com/docs/extensions/samples)
 
 - [https://developer.chrome.com/docs/extensions/develop](https://developer.chrome.com/docs/extensions/develop)
 
