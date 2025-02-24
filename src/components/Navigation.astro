@@ -20,20 +20,29 @@ const navItems = [
         </div>
         <span class="text-xl font-bold text-gray-800">GDG on Campus</span>
       </a>
-      <div class="flex items-center space-x-8">
+
+      <button 
+        id="menu-button"
+        class="lg:hidden text-gray-600 focus:outline-none"
+      >
+        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+          <path 
+            fill-rule="evenodd" 
+            d="M3 5h14a1 1 0 110 2H3a1 1 0 110-2zm0 4h14a1 1 0 110 2H3a1 1 0 110-2zm0 4h14a1 1 0 110 2H3a1 1 0 110-2z" 
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <div class="hidden lg:flex items-center space-x-8">
         <ul class="flex space-x-6">
-          {
-            navItems.map((item) => (
-              <li>
-                <a
-                  href={item.href}
-                  class="text-gray-600 hover:text-[--google-blue] transition-colors"
-                >
-                  {item.text}
-                </a>
-              </li>
-            ))
-          }
+          {navItems.map((item) => (
+            <li>
+              <a href={item.href} class="text-gray-600 hover:text-[--google-blue] transition-colors">
+                {item.text}
+              </a>
+            </li>
+          ))}
         </ul>
         <a
           href="https://discord.gg/m2ZwBCabCq"
@@ -50,5 +59,34 @@ const navItems = [
         </a>
       </div>
     </div>
+
+    <div id="menu-dropdown" class="hidden lg:hidden bg-white shadow-md py-2">
+      <ul class="flex flex-col space-y-2 px-4">
+        {navItems.map((item) => (
+          <li>
+            <a href={item.href} class="block py-2 text-gray-600 hover:text-[--google-blue] transition-colors">
+              {item.text}
+            </a>
+          </li>
+        ))}
+      </ul>
+      <div class="px-4 py-2">
+        <a href="https://discord.gg/m2ZwBCabCq" target="_blank" rel="noopener noreferrer"
+          class="block text-center bg-[#5865F2] hover:bg-[#4752C4] text-white px-4 py-2 rounded-full transition-colors">
+          Join Discord
+        </a>
+      </div>
+    </div>
   </div>
 </nav>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const menuButton = document.getElementById("menu-button");
+    const menuDropdown = document.getElementById("menu-dropdown");
+
+    menuButton?.addEventListener("click", () => {
+      menuDropdown?.classList.toggle("hidden");
+    });
+  });
+</script>
