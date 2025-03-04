@@ -114,7 +114,7 @@
       ]
     },
     {
-      "weekNumber": 5,
+      "weekNumber": 6,
       "topic": "Go",
       "slug": "go",
       "challenges": [
@@ -176,7 +176,7 @@
       ]
     },
     {
-      "weekNumber": 6,
+      "weekNumber": 7,
       "topic": "Tensorflow",
       "slug": "tensorflow",
       "challenges": [
@@ -198,7 +198,7 @@
       ]
     },
     {
-      "weekNumber": 7,
+      "weekNumber": 8,
       "topic": "Chrome Extension",
       "slug": "chromeextension",
       "challenges": [
