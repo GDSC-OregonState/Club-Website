@@ -20,8 +20,8 @@ On top of everyone's mind is one question, "How do I land an internship?". Well,
    - Use [**Jake's Resume Template**](https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs) as a starting point. It’s a clean, ATS-friendly LaTeX format commonly used by students in CS.  
 <br /> 
 2. **Where to find Internships**:  
-   - [**Summer 2026 Internships List (SimplifyJobs)**](https://github.com/SimplifyJobs/Summer2026-Internships) – A crowd-sourced list of internship applications.  
-   - [**New Grad Positions (SimplifyJobs)**](https://github.com/SimplifyJobs/New-Grad-Positions) – A maintained list of new grad roles for software engineers.  
+   - [**Summer 2026 Internships List**](https://github.com/vanshb03/Summer2026-Internships) – A crowd-sourced list of internship applications.  
+   - [**New Grad Positions**]( https://github.com/vanshb03/New-Grad-2026 ) – A maintained list of new grad roles for software engineers.  
 
 
 ## Recommended Downloads
