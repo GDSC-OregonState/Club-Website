@@ -3,6 +3,8 @@ import Layout from "@/layouts/Layout.astro";
 import { getPosts } from "@/lib/fetcher";
 import BlogCard from "@/components/BlogCard.astro";
 const posts = await getPosts();
+
+
 ---
 
 <Layout title="Blog">
@@ -10,10 +12,21 @@ const posts = await getPosts();
     <h2 class="text-7xl font-bold text-center mt-12 mb-20">
       Blog
     </h2>
+    <h2 class="text-5xl font-bold mt-12 mb-12">Fall 2025</h2>
     <div
       class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-9 md:gap-y-11 lg:gap-y-16 lg:gap-x-8"
     >
-      {posts.map((post) => <BlogCard {...post} />)}
+      {posts
+  .filter((post) => new Date(post.data.pubDate) > new Date("2025-08-01"))
+  .map((post) => <BlogCard {...post} />)}
+    </div>
+        <h2 class="text-5xl font-bold mt-12 mb-12">Winter 2025</h2>
+    <div
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-9 md:gap-y-11 lg:gap-y-16 lg:gap-x-8"
+    >
+      {posts
+  .filter((post) => new Date(post.data.pubDate) < new Date("2025-08-01"))
+  .map((post) => <BlogCard {...post} />)}
     </div>
   </section>
 </Layout>
