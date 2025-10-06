@@ -104,7 +104,7 @@ IDEs are pretty much the main tool in your belt for coding. They contain code ed
 2. **Do of the Following**
     - Change Theme (50 pts)
     - Add at least one extension (50 pts)
-    - 
+    
 
 3. **Build Your Own VS Code Setup** (200 pts)
     - Set up VS Code to connect to a remote server, and run code from there (More on this next week, ENGR Servers).
