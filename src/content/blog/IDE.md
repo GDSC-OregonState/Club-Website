@@ -104,7 +104,7 @@ IDEs are pretty much the main tool in your belt for coding. They contain code ed
 2. **Do of the Following**
     - Change Theme (50 pts)
     - Add at least one extension (50 pts)
-    - 
+    
 
 3. **Build Your Own VS Code Setup** (200 pts)
     - Set up VS Code to connect to a remote server, and run code from there (More on this next week, ENGR Servers).
@@ -143,17 +143,19 @@ IDEs are pretty much the main tool in your belt for coding. They contain code ed
    }
 4. Run the task with Ctrl+Shift+B
 
-### Create or Edit a Custom Color Theme
+### Create a New Theme from Your Current Settings
 
-1. Press `F1` → **Developer: Generate Color Theme from Current Settings**.  
-2. VS Code will create a `.json` theme file.  
-3. Save it to your `.vscode/extensions` folder or a custom theme directory.  
+**1. Open the Command Palette**  
+Press **`F1`** or **`Ctrl + Shift + P`** (Windows/Linux) or **`Cmd + Shift + P`** (Mac).
 
-#### To tweak an existing theme:
-1. Open the theme’s `.json` file.  
-2. Edit colors like `"editor.background"` or `"editorCursor.foreground"`.  
-3. Reload VS Code and select your theme under **File → Preferences → Color Theme**.  
+**2. Run the Command:**  
+Type:  Developer: Generate Color Theme from Current Settings
 
-🖌️ **Pro tip:** Try the **Yo Code** extension generator to build a publishable theme extension:  
-```bash
-npm install -g yo generator-code
+
+**3. Save Your Theme File:**  
+VS Code will open a generated `.json` file. Save it in one of these locations:  
+- **Local use:** `C:\Users\<you>\.vscode\extensions\my-custom-theme/`  
+- **Custom directory:** any folder you prefer (e.g., `my-theme/`)
+
+**4. Apply Your Theme:**  
+Open the Command Palette again → `Preferences: Color Theme` → Select your new theme.
