@@ -32,6 +32,21 @@
       "topic": "Git",
       "slug": "git",
       "challenges": [
+        {
+          "name": "Install Git and configure your username and email",
+          "points": 50,
+          "description": "Install Git on your machine and set up your global username and email using git config commands."
+        },
+        {
+          "name": "Create your first local repository",
+          "points": 50,
+          "description": "Create a new folder, initialize a Git repository, create a file, stage it, and make your first commit."
+        },
+        {
+          "name": "Push your repository to GitHub",
+          "points": 30,
+          "description": "Create a new repository on GitHub, connect your local repository to it, and push your commits to the remote repository."
+        }
       ]
     },
     {
@@ -39,6 +54,31 @@
       "topic": "Kotlin",
       "slug": "kotlin2025",
       "challenges": [
+        {
+          "name": "Hello World",
+          "points": 50,
+          "description": "Write a Kotlin function that prints 'Hello, [Your Name]!' to the console. Use string templates"
+        },
+        {
+          "name": "When Expression",
+          "points": 50,
+          "description": "Write a function to assign a letter grade, given an integer score (out of 100). Use Kotlin’s when expression and ranges."
+        },
+        {
+          "name": "Null Safety",
+          "points": 20,
+          "description": "Update your hello world greeting function to take a nullable string instead. If the name is null, use 'guest'."
+        },
+        {
+          "name": "Extension Function",
+          "points": 20,
+          "description": "Create an extension function for the String class that returns string in uppercase with exclamation marks."
+        },
+        {
+          "name": "Kotlin Multiplatform Project",
+          "points": 100,
+          "description": "Create a simple Kotlin Multiplatform project that runs on at least two targets and uses expect/actual mechanism."
+        }
       ]
     }
   ]
