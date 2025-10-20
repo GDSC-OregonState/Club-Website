@@ -1,279 +1,44 @@
 {
   "weeks": [
     {
-      "weekNumber": 1,
-      "topic": "Angular",
-      "slug": "angular",
-      "challenges": [
-        {
-          "name": "Hello World Angular",
-          "points": 100,
-          "description": "Create a basic Angular frontend that displays 'Hello World' and your name on the screen."
-        },
-        {
-          "name": "Animation",
-          "points": 25,
-          "description": "Add an animation to your Angular app."
-        },
-        {
-          "name": "Todo List App",
-          "points": 75,
-          "description": "Create a todo list app that allows users to add, edit, complete, and delete tasks."
-        }
-      ]
-    },
-    {
       "weekNumber": 2,
-      "topic": "Flutter",
-      "slug": "flutter",
+      "topic": "Integrated Development Environments",
+      "slug": "ide",
       "challenges": [
         {
-          "name": "Setup Challenge",
+          "name": "Install IDE",
           "points": 100,
-          "description": "Download and set up Flutter with Android Studio. Verify the installation by running `flutter doctor`."
+          "description": "Simply install VS Code or another IDE"
         },
         {
-          "name": "Hello Flutter App",
-          "points": 100,
-          "description": "Create a simple Flutter app that displays 'Hello, Flutter!' in the center of the screen. Customize the text's style and background color."
-        },
-        {
-          "name": "Button Challenge",
+          "name": "Theme",
           "points": 25,
-          "description": "Add a button that updates the text to 'Button Pressed!' when clicked."
+          "description": "Set a custom theme for your IDE"
         },
         {
-          "name": "Navigation Challenge",
+          "name": "Extensions",
+          "points": 25,
+          "description": "Install at least 1 cool extension for your IDE"
+        },
+        {
+          "name": "Configure your setup",
           "points": 50,
-          "description": "Create a second screen and add navigation to it. Display a custom message on the second screen."
-        },
-        {
-          "name": "To-Do App",
-          "points": 100,
-          "description": "Build a to-do app where users can add items to a list. Include a text field for input and a scrollable list to display tasks."
+          "description": "Setup your IDE to connect to a remote server. Configure a tasks.json to run a build command. Create your own custom color theme."
         }
       ]
     },
     {
       "weekNumber": 3,
-      "topic": "Firebase",
-      "slug": "firebase",
+      "topic": "Git",
+      "slug": "git",
       "challenges": [
-        {
-          "name": "Firebase Setup",
-          "points": 50,
-          "description": "Set up a Firebase project and integrate Firebase Authentication into a frontend of your choice."
-        },
-        {
-          "name": "Sign In Form",
-          "points": 50,
-          "description": "Create a sign-in/sign-up form that connects to Firebase Authentication. Populate it with at least three accounts."
-        },
-        {
-          "name": "Firestore Setup",
-          "points": 75,
-          "description": "Set up Firebase Firestore and populate it with any data of your choice."
-        },
-        {
-          "name": "Display Data",
-          "points": 75,
-          "description": "Connect your frontend to the Firebase Firestore and display the populated data on your app."
-        }
       ]
     },
     {
       "weekNumber": 4,
       "topic": "Kotlin",
-      "slug": "kotlin",
+      "slug": "kotlin2025",
       "challenges": [
-        {
-          "name": "Hello World String Template",
-          "points": 40,
-          "description": "Write a Kotlin program that prints 'Hello, name!' using string templates."
-        },
-        {
-          "name": "When Expression FizzBuzz",
-          "points": 20,
-          "description": "Write a function that prints FizzBuzz for a number using a when expression."
-        },
-        {
-          "name": "Null Safe String Length",
-          "points": 20,
-          "description": "Write a function that returns the length of a string or -1 if the string is null."
-        },
-        {
-          "name": "Extension Function Character Getter",
-          "points": 20,
-          "description": "Write an extension function that returns the 3th character of a string."
-        },
-        {
-          "name": "Multiplatform Project",
-          "points": 100,
-          "description": "Create a multiplatform project that shares code between two platforms."
-        }
-      ]
-    },
-    {
-      "weekNumber": 6,
-      "topic": "Go",
-      "slug": "go",
-      "challenges": [
-        {
-          "name": "Go International",
-          "points": 10,
-          "description": "Create a script that writes 'Go is a cool programming language' in 5 different languages"
-        },
-        {
-          "name": "Go Around, and Around, and Around",
-          "points": 30,
-          "description": "Create a script that returns the 20th Fibonacci number"
-        },
-        {
-          "name": "Go get the internship",
-          "points": 20,
-          "description": "Create a script that returns the 182nd Fibonacci number"
-        },
-        {
-          "name": "Go, go, go, STOP!",
-          "points": 10,
-          "description": "Create a script that will execute a long operation with a Goroutine"
-        },
-        {
-          "name": "Pokémon Go!",
-          "points": 30,
-          "description": "Create a script that can count Pokemon by type"
-        },
-        {
-          "name": "HTTP, GET & GO",
-          "points": 40,
-          "description": "Create a basic HTTP endpoint with Gin"
-        },
-        {
-          "name": "HTTP, GET & GO (Bonus)",
-          "points": 20,
-          "description": "Create a basic HTTP endpoint without Gin"
-        },
-        {
-          "name": "Go Template",
-          "points": 30,
-          "description": "Render a basic HTML script with a custom message based on a string stored on the server, using Go's templating engine."
-        },
-        {
-          "name": "Cryp-Go",
-          "points": 30,
-          "description": "Create an AES-GCM SHA256-HMAC using Encrypt-then-HMAC"
-        },
-        {
-          "name": "Go Sockets",
-          "points": 50,
-          "description": "Create a Go web socket server"
-        },
-        {
-          "name": "Go-currency",
-          "points": 50,
-          "description": "Create a concurrent, file-reading and editing script"
-        }
-      ]
-    },
-    {
-      "weekNumber": 7,
-      "topic": "Tensorflow",
-      "slug": "tensorflow",
-      "challenges": [
-        {
-          "name": "Matrix Math",
-          "points": 50,
-          "description": "Create a script that performs several matrix math operations."
-        },
-        {
-          "name": "MNIST Basics",
-          "points": 50,
-          "description": "Create a working data loading, model training, and model evaluation script using Tensorflow."
-        },
-        {
-          "name": "Convolutional Neural Network Basics",
-          "points": 100,
-          "description": "Create a working convolutional machine learning model that can evaluate images from the CIFAR10 image dataset"
-        }
-      ]
-    },
-    {
-      "weekNumber": 8,
-      "topic": "Chrome Extension",
-      "slug": "chromeextension",
-      "challenges": [
-        {
-          "name": "Modify Page Color",
-          "points": 10,
-          "description": "Change the background color of a website to light blue."
-        },
-        {
-          "name": "Popup Message",
-          "points": 10,
-          "description": "Add a button to the popup that displays an alert when clicked."
-        },
-        {
-          "name": "Change Tab Title",
-          "points": 10,
-          "description": "Modify the title of the current webpage to 'Hello, World!'."
-        },
-        {
-          "name": "Save and Restore User Input",
-          "points": 30,
-          "description": "Create a popup with a text input field that saves what the user types and restores it when reopened."
-        },
-        {
-          "name": "Replace Words on a Webpage",
-          "points": 30,
-          "description": "Replace all instances of 'the' with '🚀' on any website."
-        },
-        {
-          "name": "Dynamic Background Changer",
-          "points": 30,
-          "description": "Let users pick a background color from the popup and apply it to all webpages."
-        },
-        {
-          "name": "Block a Specific Website",
-          "points": 40,
-          "description": "Prevent access to a specific website (e.g., YouTube) by redirecting to another page."
-        },
-        {
-          "name": "Track Browsing Time",
-          "points": 40,
-          "description": "Count the total time a user spends on a specific website and display it in the popup."
-        },
-        {
-          "name": "Context Menu Actions",
-          "points": 40,
-          "description": "Add a right-click menu option that lets users highlight text and copy it to the clipboard automatically."
-        },
-        {
-          "name": "Web Scraper & Notification",
-          "points": 40,
-          "description": "Scrape the price of a product from a shopping website and display it to the user in the popup or send an alert message."
-        }
-      ]
-    },
-    {
-      "weekNumber": 9,
-      "topic": "Dart",
-      "slug": "dart-challenge",
-      "challenges": [
-        {
-          "name": "Basic Calculator",
-          "points": 100,
-          "description": "Implement a basic calculator that performs addition, subtraction, multiplication, and division."
-        },
-        {
-          "name": "Unit Converter",
-          "points": 100,
-          "description": "Create a terminal-based unit converter that converts miles to meters."
-        },
-        {
-          "name": "Chat Application",
-          "points": 200,
-          "description": "Create a real-time chat application where users can send messages to each other."
-        }
       ]
     }
   ]
