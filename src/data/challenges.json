@@ -80,6 +80,33 @@
           "description": "Create a simple Kotlin Multiplatform project that runs on at least two targets and uses expect/actual mechanism."
         }
       ]
+    },
+    {
+      "weekNumber": 6,
+      "topic": "React",
+      "slug": "react",
+      "challenges": [
+        {
+          "name": "Customize Start Page",
+          "points": 25,
+          "description": "Create a new React project and customize the starter page to add your name."
+        },
+        {
+          "name": "Text Mirror",
+          "points": 50,
+          "description": "Use the useState concept to create a live mirror of whatever the user is typing into a text box onto the page."
+        },
+        {
+          "name": "Reusable Component",
+          "points": 75,
+          "description": "Build a reuable photoCard component in a new file. Have the component take in two props, imageURL and name. Add several instances to your page."
+        },
+        {
+          "name": "To-Do List",
+          "points": 125,
+          "description": "Create a to-do list page using both useState and components."
+        }
+      ]
     }
   ]
 }
