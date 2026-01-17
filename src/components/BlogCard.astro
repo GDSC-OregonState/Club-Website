@@ -1,6 +1,4 @@
 ---
-import { Badge } from "@/components/ui/badge";
-// import { formatDate } from "@/lib/utils";
 import { Image } from "astro:assets";
 import type { CollectionEntry } from "astro:content";
 
@@ -29,7 +27,6 @@ const post = Astro.props;
         class="font-medium text-muted-foreground"
         transition:name={"date-" + post.slug}
       >
-        <!-- {formatDate(post.data.pubDate)} -->
       </span>
     </div>
 

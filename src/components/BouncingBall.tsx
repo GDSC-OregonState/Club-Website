@@ -9,13 +9,9 @@ interface Ball {
   color: string;
 }
 
-interface BouncingBallProps {
-  colors?: string[]; // Array of colors for the balls
-}
+const googleColors = ["#4285f4", "#ea4335", "#34a853", "#f9ab00"];
 
-const BouncingBall: React.FC<BouncingBallProps> = ({
-  colors = ["#3498db", "#e74c3c", "#2ecc71", "#f39c12"],
-}) => {
+const BouncingBall: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const [windowSize, setWindowSize] = useState<{
     width: number;
@@ -35,7 +31,7 @@ const BouncingBall: React.FC<BouncingBallProps> = ({
     let animationFrameId: number;
 
     // Create 4 bouncing balls with random initial positions, velocities, and colors
-    const balls: Ball[] = [...colors, ...colors].map((color) => ({
+    const balls: Ball[] = [...googleColors, ...googleColors].map((color) => ({
       x: Math.random() * windowSize.width,
       y: Math.random() * windowSize.height,
       dx: (Math.random() - 0.5) * 1.5, // Random horizontal speed
@@ -105,7 +101,7 @@ const BouncingBall: React.FC<BouncingBallProps> = ({
       cancelAnimationFrame(animationFrameId);
       window.removeEventListener("resize", resizeHandler);
     };
-  }, [windowSize, colors]);
+  }, [windowSize, googleColors]);
 
   return (
     <canvas

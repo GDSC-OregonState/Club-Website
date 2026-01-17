@@ -11,7 +11,7 @@ const Challenge: React.FC<{ challenge: any }> = ({ challenge }) => {
       >
         <h4 className="text-lg font-semibold">{challenge.name}</h4>
         <div className="flex items-center">
-          <span className="text-[--google-green] font-bold mr-2">
+          <span className="text-google-green-500 font-bold mr-2">
             {challenge.points} pts
           </span>
           <svg
@@ -51,7 +51,7 @@ const WeekChallenges: React.FC<{ week: any }> = ({ week }) => {
         onClick={() => setExpanded(!expanded)}
       >
         <a href={`/blog/${week.slug}/`}>
-          <h3 className="text-xl text-[--google-blue] font-bold underline">
+          <h3 className="text-xl text-google-blue-500 font-bold underline">
             Week {week.weekNumber}: {week.topic}
           </h3>
         </a>

@@ -7,6 +7,25 @@ export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,ts,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        sans: [
+          "Google Sans",
+          "ui-sans-serif",
+          "system-ui",
+          "-apple-system",
+          "BlinkMacSystemFont",
+          "Segoe UI",
+          "Roboto",
+          "Helvetica Neue",
+          "Arial",
+          "Noto Sans",
+          "sans-serif",
+          "Apple Color Emoji",
+          "Segoe UI Emoji",
+          "Segoe UI Symbol",
+          "Noto Color Emoji",
+        ],
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
@@ -15,11 +34,32 @@ export default {
       colors: {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
-        gred: "#ea4335",
-        gblue: "#4285f4",
-        ggreen: "#34a853",
-        gyellow: "#fbbc05",
-        borange: "#D73F09",
+        google: {
+          blue: {
+            500: "#4285f4",
+            pastel: "#c3ecf6",
+            halftone: "#57caff",
+          },
+          green: {
+            500: "#34a853",
+            pastel: "#ccf6c5",
+            halftone: "#5cdb6d",
+          },
+          yellow: {
+            600: "#f9ab00",
+            pastel: "#ffe7a5",
+            halftone: "#ffd427",
+          },
+          red: {
+            500: "#ea4335",
+            pastel: "#f8d8d8",
+            halftone: "#ff7daf",
+          },
+          gray: {
+            "off-white": "#f0f0f0",
+            "black-02": "#1e1e1e",
+          },
+        },
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",

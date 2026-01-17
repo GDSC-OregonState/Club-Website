@@ -20,6 +20,10 @@ const { title } = Astro.props;
       {title} | Google Developer Group on Campus - Oregon State University
     </title>
     <link rel="icon" type="image/png" href="/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <script type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
     </script> 
@@ -27,20 +31,10 @@ const { title } = Astro.props;
   <body class="flex flex-col min-h-screen bg-gray-50">
     <BlurBackground />
     <BouncingBall client:only />
-    <!-- <BouncingBall client:only /> -->
     <Navigation />
     <main class="flex-grow container mx-auto px-4 py-8">
       <slot />
     </main>
-    <Footer class="mt-auto bg-[--google-blue] text-white py-8" />
+    <Footer class="mt-auto bg-google-blue-500 text-white py-8" />
   </body>
 </html>
-
-<style is:global>
-  :root {
-    --google-blue: #4285f4;
-    --google-red: #ea4335;
-    --google-yellow: #fbbc05;
-    --google-green: #34a853;
-  }
-</style>

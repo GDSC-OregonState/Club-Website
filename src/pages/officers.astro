@@ -5,7 +5,7 @@ import officers from '../data/officers.json';
 ---
 
 <Layout title="Officers">
-  <div class="bg-gradient-to-br from-[--google-blue] to-blue-700 text-white py-12">
+  <div class="bg-gradient-to-br from-google-blue-500 to-blue-700 text-white py-12">
     <div class="container mx-auto px-4">
       <h1 class="text-4xl font-bold text-center">Meet Our Team</h1>
     </div>
@@ -25,11 +25,11 @@ import officers from '../data/officers.json';
             />
             <div class="p-6">
               <h2 class="text-xl font-bold mb-1">{officer.name}</h2>
-              <p class="text-[--google-blue] font-medium mb-2">{officer.position}</p>
+              <p class="text-google-blue-500 font-medium mb-2">{officer.position}</p>
               <p class="text-gray-600 mb-4 text-sm">{officer.description}</p>
               <a 
               href={officer.linkedin} 
-              class="text-[--google-blue] hover:text-blue-700 text-sm flex items-center"
+              class="text-google-blue-500 hover:text-blue-700 text-sm flex items-center"
               target="_blank" 
               rel="noopener noreferrer"
               >
