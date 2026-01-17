@@ -2,6 +2,18 @@
 import Layout from '../layouts/Layout.astro';
 import { Image } from 'astro:assets';
 import officers from '../data/officers.json';
+
+const photoFrames = [
+  '/photo_frames/GDG-Campus-Social-PhotoFrame-Blue.png',
+  '/photo_frames/GDG-Campus-Social-PhotoFrame-Green.png',
+  '/photo_frames/GDG-Campus-Social-PhotoFrame-Red.png',
+  '/photo_frames/GDG-Campus-Social-PhotoFrame-Yellow.png',
+];
+
+const officersWithFrames = officers.map(officer => ({
+  ...officer,
+  frame: photoFrames[Math.floor(Math.random() * photoFrames.length)],
+}));
 ---
 
 <Layout title="Officers">
@@ -14,15 +26,22 @@ import officers from '../data/officers.json';
   <section class="py-16">
     <div class="container mx-auto px-4">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        {officers.map((officer) => (
+        {officersWithFrames.map((officer) => (
           <div class="bg-white rounded-lg shadow-md overflow-hidden">
-            <Image 
-              src={officer.image} 
-              alt={officer.name} 
-              width={300} 
-              height={300} 
-              class="w-full h-auto object-cover rounded-full shadow-md border-2 border-gray-300"
-            />
+            <div class="relative">
+              <Image
+                src={officer.image} 
+                alt={officer.name} 
+                width={300} 
+                height={300} 
+                class="w-full h-auto object-cover"
+              />
+              <img
+                src={officer.frame}
+                alt="Photo frame"
+                class="absolute top-0 left-0 w-full h-full"
+              />
+            </div>
             <div class="p-6">
               <h2 class="text-xl font-bold mb-1">{officer.name}</h2>
               <p class="text-google-blue-500 font-medium mb-2">{officer.position}</p>
