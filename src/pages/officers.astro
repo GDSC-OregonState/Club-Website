@@ -2,18 +2,6 @@
 import Layout from '../layouts/Layout.astro';
 import { Image } from 'astro:assets';
 import officers from '../data/officers.json';
-
-const photoFrames = [
-  '/photo_frames/GDG-Campus-Social-PhotoFrame-Blue.png',
-  '/photo_frames/GDG-Campus-Social-PhotoFrame-Green.png',
-  '/photo_frames/GDG-Campus-Social-PhotoFrame-Red.png',
-  '/photo_frames/GDG-Campus-Social-PhotoFrame-Yellow.png',
-];
-
-const officersWithFrames = officers.map(officer => ({
-  ...officer,
-  frame: photoFrames[Math.floor(Math.random() * photoFrames.length)],
-}));
 ---
 
 <Layout title="Officers">
@@ -26,9 +14,9 @@ const officersWithFrames = officers.map(officer => ({
   <section class="py-16">
     <div class="container mx-auto px-4">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        {officersWithFrames.map((officer) => (
+        {officers.map((officer) => (
           <div class="bg-white rounded-lg shadow-md overflow-hidden">
-            <div class="relative">
+            <div class="relative officer-card">
               <Image
                 src={officer.image} 
                 alt={officer.name} 
@@ -37,9 +25,9 @@ const officersWithFrames = officers.map(officer => ({
                 class="w-full h-auto object-cover"
               />
               <img
-                src={officer.frame}
+                src=""
                 alt="Photo frame"
-                class="absolute top-0 left-0 w-full h-full"
+                class="absolute top-0 left-0 w-full h-full photo-frame"
               />
             </div>
             <div class="p-6">
@@ -64,3 +52,23 @@ const officersWithFrames = officers.map(officer => ({
     </div>
   </section>
 </Layout>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const photoFrames = [
+      '/photo_frames/GDG-Campus-Social-PhotoFrame-Blue.png',
+      '/photo_frames/GDG-Campus-Social-PhotoFrame-Green.png',
+      '/photo_frames/GDG-Campus-Social-PhotoFrame-Red.png',
+      '/photo_frames/GDG-Campus-Social-PhotoFrame-Yellow.png',
+    ];
+
+    const officerCards = document.querySelectorAll('.officer-card');
+    officerCards.forEach(card => {
+      const frame = card.querySelector('.photo-frame') as HTMLImageElement;
+      if (frame) {
+        const randomFrame = photoFrames[Math.floor(Math.random() * photoFrames.length)];
+        frame.src = randomFrame;
+      }
+    });
+  });
+</script>
