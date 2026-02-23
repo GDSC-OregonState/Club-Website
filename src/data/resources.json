@@ -1,0 +1,57 @@
+[
+  {
+    "category": "Google Developer Resources",
+    "items": [
+      {
+        "title": "Google Developers",
+        "description": "Official Google Developers portal with documentation, tools, and resources",
+        "url": "https://developers.google.com/"
+      },
+      {
+        "title": "Google Cloud Platform",
+        "description": "Cloud computing services and infrastructure documentation",
+        "url": "https://cloud.google.com/docs"
+      },
+      {
+        "title": "Android Developers",
+        "description": "Everything you need to build Android apps",
+        "url": "https://developer.android.com/"
+      },
+      {
+        "title": "Firebase Documentation",
+        "description": "Backend platform for building web and mobile applications",
+        "url": "https://firebase.google.com/docs"
+      }
+    ]
+  },
+  {
+    "category": "Community & Support",
+    "items": [
+      {
+        "title": "GDG Community",
+        "description": "Join the global Google Developer Groups community",
+        "url": "https://gdg.community.dev/"
+      },
+      {
+        "title": "GitHub Student Developer Pack",
+        "description": "Free developer tools and resources for students",
+        "url": "https://education.github.com/pack"
+      }
+    ]
+  },
+  {
+    "category": "Tools & Technologies",
+    "items": [
+      {
+        "title": "Google Chrome DevTools",
+        "description": "Web developer tools built into Google Chrome",
+        "url": "https://developer.chrome.com/docs/devtools/"
+      },
+      {
+        "title": "Flutter",
+        "description": "Build beautiful, cross-platform apps from a single codebase",
+        "url": "https://flutter.dev/"
+      }
+    ]
+  }
+]

@@ -1,0 +1,44 @@
+---
+import Layout from '../layouts/Layout.astro';
+import resources from '../data/resources.json';
+---
+
+<Layout title="Resources">
+  <div class="bg-gradient-to-br from-google-green-500 to-green-700 text-white py-12">
+    <div class="container mx-auto px-4">
+      <h1 class="text-4xl font-bold text-center">Developer Resources</h1>
+    </div>
+  </div>
+
+  <section class="py-16">
+    <div class="container mx-auto px-4">
+      <div class="space-y-12">
+        {resources.map((category) => (
+          <div class="bg-white rounded-lg shadow-md p-8">
+            <h2 class="text-3xl font-bold mb-6 text-gray-800">{category.category}</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {category.items.map((item) => (
+                <a
+                  href={item.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="block p-6 border-2 border-gray-200 rounded-lg hover:border-google-blue-500 hover:shadow-lg transition-all duration-300 group"
+                >
+                  <h3 class="text-xl font-semibold mb-2 text-google-blue-500 group-hover:text-blue-700 flex items-center">
+                    {item.title}
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 ml-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </h3>
+                  <p class="text-gray-600">{item.description}</p>
+                </a>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+</Layout>
