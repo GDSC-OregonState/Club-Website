@@ -2,9 +2,9 @@
   {
     "name": "Jak Tynshimov",
     "position": "Co-President",
-    "image": "/officer_headshots/Placeholder_Headshot.png",
-    "linkedin": "",
-    "description": ""
+    "image": "/officer_headshots/Jak_Tynshimov_Headshot_Photo.jpg",
+    "linkedin": "https://www.linkedin.com/in/tynshimov/",
+    "description": "Computer Science and Physics with an engineering habit: AI agents, hackathons, and shipping club projects fast"
   },
   {
     "name": "Tyler Quach",
@@ -37,8 +37,8 @@
   {
     "name": "Alejandro Villeda Schaeuffler",
     "position": "Public Relations",
-    "image": "/officer_headshots/Placeholder_Headshot.png",
+    "image": "/officer_headshots/Alejandro_Villeda_Schaeuffler_Headshot_Photo.jpg",
     "linkedin": "https://www.linkedin.com/in/alejandro-villeda-schaeuffler-a1216333a/",
-    "description": ""
+    "description": "Computer Science undergraduate, bilingual, research assistant on AI literacy videos, and the voice behind everything we post"
   }
 ]
