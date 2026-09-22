@@ -1,9 +1,16 @@
 [
   {
-    "name": "Taz Larson",
-    "position": "President",
-    "image": "/officer_headshots/Taz_Larson_Headshot_Photo.jpg",
-    "linkedin": "https://www.linkedin.com/in/taz-larson-a32955265/",
+    "name": "Jak Tynshimov",
+    "position": "Co-President",
+    "image": "/officer_headshots/Placeholder_Headshot.png",
+    "linkedin": "",
+    "description": ""
+  },
+  {
+    "name": "Tyler Quach",
+    "position": "Co-President & Treasurer",
+    "image": "/officer_headshots/Tyler_Quach_Headshot_Photo.jpg",
+    "linkedin": "https://www.linkedin.com/in/tyler-quach-/",
     "description": ""
   },
   {
@@ -12,20 +19,6 @@
     "image": "/officer_headshots/Will_Teyema_Headshot_Photo.jpg",
     "linkedin": "https://www.linkedin.com/in/will-teyema/",
     "description": "Computer Science junior with a focus on AI and am always coding, climbing, or skiing"
-  },
-  {
-    "name": "Kai Black",
-    "position": "GDG on Campus Organizer",
-    "image": "/officer_headshots/Kai_Black_Headshot_Photo.jpg",
-    "linkedin": "https://www.linkedin.com/in/kai-black/",
-    "description": "Computer Science senior focused on backend, distributed systems, and being bad at the guitar"
-  },
-  {
-    "name": "Tyler Quach",
-    "position": "Treasurer",
-    "image": "/officer_headshots/Tyler_Quach_Headshot_Photo.jpg",
-    "linkedin": "https://www.linkedin.com/in/tyler-quach-/",
-    "description": ""
   },
   {
     "name": "Sean Gutmann",
@@ -42,10 +35,10 @@
     "description": ""
   },
   {
-    "name": "Samuel Jamieson",
+    "name": "Alejandro Villeda Schaeuffler",
     "position": "Public Relations",
-    "image": "/officer_headshots/Samuel_Jamieson_Headshot_Photo.png",
-    "linkedin": "https://www.linkedin.com/in/samuel-jamieson/",
+    "image": "/officer_headshots/Placeholder_Headshot.png",
+    "linkedin": "",
     "description": ""
   }
 ]

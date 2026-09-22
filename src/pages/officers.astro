@@ -34,6 +34,7 @@ import officers from '../data/officers.json';
               <h2 class="text-xl font-bold mb-1">{officer.name}</h2>
               <p class="text-google-blue-500 font-medium mb-2">{officer.position}</p>
               <p class="text-gray-600 mb-4 text-sm">{officer.description}</p>
+              {officer.linkedin && (
               <a 
               href={officer.linkedin} 
               class="text-google-blue-500 hover:text-blue-700 text-sm flex items-center"
@@ -45,6 +46,7 @@ import officers from '../data/officers.json';
                 </svg>
                 LinkedIn
               </a>
+              )}
             </div>
           </div>
         ))}
