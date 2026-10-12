@@ -1,7 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { Image } from 'astro:assets';
-import officers from '../data/officers.json';
+import officerData from '../data/officers.json';
+
+// Initials stand in for a missing headshot; a quoted nickname is skipped.
+const initials = (name: string) =>
+  name.replace(/"[^"]*"/g, '').split(/\s+/).filter(Boolean).map((w) => w[0]).join('').slice(0, 2);
+const officers = officerData.map((o) => ({ ...o, initials: initials(o.name) }));
 ---
 
 <Layout title="Officers">
@@ -17,6 +22,7 @@ import officers from '../data/officers.json';
         {officers.map((officer) => (
           <div class="bg-white rounded-lg shadow-md overflow-hidden">
             <div class="relative officer-card">
+              {officer.image ? (
               <Image
                 src={officer.image} 
                 alt={officer.name} 
@@ -24,6 +30,11 @@ import officers from '../data/officers.json';
                 height={300} 
                 class="w-full h-auto object-cover"
               />
+              ) : (
+              <div class="w-full aspect-square flex items-center justify-center bg-google-blue-500 text-white text-6xl font-bold" role="img" aria-label={officer.name}>
+                {officer.initials}
+              </div>
+              )}
               <img
                 src=""
                 alt="Photo frame"

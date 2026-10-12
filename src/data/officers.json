@@ -1,44 +1,44 @@
 [
   {
     "name": "Jak Tynshimov",
-    "position": "Co-President",
+    "position": "President & Treasurer",
     "image": "/officer_headshots/Jak_Tynshimov_Headshot_Photo.jpg",
     "linkedin": "https://www.linkedin.com/in/tynshimov/",
     "description": "Computer Science and Physics with an engineering habit: AI agents, hackathons, and shipping club projects fast"
   },
   {
-    "name": "Tyler Quach",
-    "position": "Co-President & Treasurer",
-    "image": "/officer_headshots/Tyler_Quach_Headshot_Photo.jpg",
-    "linkedin": "https://www.linkedin.com/in/tyler-quach-/",
-    "description": ""
-  },
-  {
-    "name": "Will Teyema",
-    "position": "Vice President",
-    "image": "/officer_headshots/Will_Teyema_Headshot_Photo.jpg",
-    "linkedin": "https://www.linkedin.com/in/will-teyema/",
-    "description": "Computer Science junior with a focus on AI and am always coding, climbing, or skiing"
-  },
-  {
     "name": "Sean Gutmann",
-    "position": "Technical Officer",
+    "position": "Vice President",
     "image": "/officer_headshots/Sean_Gutmann_Headshot_Photo.jpg",
     "linkedin": "https://www.linkedin.com/in/seangutmann/",
     "description": "Computer Science sophomore focused on backend, video game development, and hitting 225 on bench"
   },
   {
-    "name": "Stanley Eng",
-    "position": "Technical Officer",
-    "image": "/officer_headshots/Stanely_Eng_Headshot_Photo.jpg",
-    "linkedin": "https://www.linkedin.com/in/stanley-eng-ab179a296/",
+    "name": "Tyler Quach",
+    "position": "Junior Advisor",
+    "image": "/officer_headshots/Tyler_Quach_Headshot_Photo.jpg",
+    "linkedin": "https://www.linkedin.com/in/tyler-quach-/",
     "description": ""
   },
   {
     "name": "Alejandro Villeda Schaeuffler",
-    "position": "Public Relations",
+    "position": "Event Coordinator",
     "image": "/officer_headshots/Alejandro_Villeda_Schaeuffler_Headshot_Photo.jpg",
     "linkedin": "https://www.linkedin.com/in/alejandro-villeda-schaeuffler-a1216333a/",
     "description": "Computer Science undergraduate, bilingual, research assistant on AI literacy videos, and the voice behind everything we post"
+  },
+  {
+    "name": "Trenston \"Kiahi\" Ricks",
+    "position": "Committee Chair",
+    "image": "",
+    "linkedin": "",
+    "description": ""
+  },
+  {
+    "name": "Will Teyema",
+    "position": "Officer",
+    "image": "/officer_headshots/Will_Teyema_Headshot_Photo.jpg",
+    "linkedin": "https://www.linkedin.com/in/will-teyema/",
+    "description": "Computer Science junior with a focus on AI and am always coding, climbing, or skiing"
   }
 ]
